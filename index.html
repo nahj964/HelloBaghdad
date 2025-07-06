@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloBaghdad - Discover the Real Baghdad</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>
+                        <i class="fas fa-map-marked-alt"></i>
+                        HelloBaghdad
+                    </h1>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#itinerary" class="nav-link">Itinerary</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Discover Baghdad</span>
+                        <span class="title-line accent">Like Never Before</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <i class="fas fa-star"></i>
+                        A Safe, Deep Cultural Exploration
+                        <i class="fas fa-star"></i>
+                    </p>
+                    <p class="hero-description">
+                        Join me on a unique walking experience where you'll see both the old and new Baghdad — 
+                        from narrow historic alleys and ancient landmarks to modern neighborhoods full of life and color.
+                    </p>
+                    
+                    <div class="price-highlight">
+                        <div class="price-content">
+                            <span class="price">$100</span>
+                            <div class="price-details">
+                                <span class="price-label">per person</span>
+                                <span class="price-note">Full-day guidance included</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="cta-button" onclick="scrollToContact()">
+                        <i class="fas fa-calendar-check"></i>
+                        Book Your Experience
+                        <span class="button-shine"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">This Isn't a Typical Guided Tour</h2>
+                    <p class="section-subtitle">Authentic experiences that reveal the true spirit of Baghdad</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h3>Two Faces of Baghdad</h3>
+                        <p>Experience both the lifestyle of working-class communities and the modern lifestyle of wealthier areas, full of new energy and culture.</p>
+                        <div class="card-decoration"></div>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Authentic Food Journey</h3>
+                        <p>Try food from both worlds — from street snacks and tea to fancy cafés. You pay only for what you choose.</p>
+                        <div class="card-decoration"></div>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Safe & Personal</h3>
+                        <p>I walk with you, guide you, share real stories, and help you explore the heart of the city safely and peacefully.</p>
+                        <div class="card-decoration"></div>
+                    </div>
+                </div>
+                
+                <div class="included-section">
+                    <div class="included-header">
+                        <h3>What's Included:</h3>
+                        <div class="included-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="included-content">
+                        <div class="included-list">
+                            <div class="included-item">
+                                <i class="fas fa-user-tie"></i>
+                                <span>Full-day guidance</span>
+                            </div>
+                            <div class="included-item">
+                                <i class="fas fa-route"></i>
+                                <span>Custom exploration route</span>
+                            </div>
+                            <div class="included-item">
+                                <i class="fas fa-book-open"></i>
+                                <span>Storytelling and cultural insights</span>
+                            </div>
+                            <div class="included-item">
+                                <i class="fas fa-heart"></i>
+                                <span>Total safety and care</span>
+                            </div>
+                        </div>
+                        <div class="included-note">
+                            <p>This price includes my time, guidance, and local knowledge. You cover your own food, drinks, and any personal expenses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="itinerary" class="itinerary">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-map-marked-alt"></i>
+                        Baghdad Exploration Itinerary
+                    </h2>
+                    <p class="section-subtitle">A carefully crafted journey through time and culture</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item" data-time="9:00 AM">
+                        <div class="timeline-marker">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="time-badge">9:00 AM</div>
+                            <h3>Meet & Welcome</h3>
+                            <p>Gather in a central, safe location. Brief introduction, safety tips, and overview of the day.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-time="9:30 AM">
+                        <div class="timeline-marker">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="time-badge">9:30 AM</div>
+                            <h3>Old Baghdad Walk</h3>
+                            <p>Explore historical streets, ancient markets, mosques, hidden alleyways, and traditional houses. Hear real stories of the past.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-time="11:00 AM">
+                        <div class="timeline-marker">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="time-badge">11:00 AM</div>
+                            <h3>Local Tea Break</h3>
+                            <p>Relax at a traditional teahouse. Try local drinks and chat with locals if you'd like.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-time="12:00 PM">
+                        <div class="timeline-marker">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="time-badge">12:00 PM</div>
+                            <h3>Daily Life Tour</h3>
+                            <p>Visit areas where working-class families live. See their shops, homes, and how they live and work.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-time="1:00 PM">
+                        <div class="timeline-marker">
+                            <i class="fas fa-hamburger"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="time-badge">1:00 PM</div>
+                            <h3>Street Food Lunch</h3>
+                            <p>Taste dishes enjoyed by everyday Baghdadis — falafel, kebab, samoon, dolma, and more.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-time="2:00 PM">
+                        <div class="timeline-marker">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="time-badge">2:00 PM</div>
+                            <h3>New Baghdad Visit</h3>
+                            <p>Explore modern neighborhoods, cafes, murals, and public spaces. See how the city is changing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-time="3:30 PM">
+                        <div class="timeline-marker">
+                            <i class="fas fa-ice-cream"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="time-badge">3:30 PM</div>
+                            <h3>Dessert & Chill</h3>
+                            <p>Enjoy sweets or ice cream in an upscale spot. Compare local and modern tastes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-time="4:30 PM">
+                        <div class="timeline-marker">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="time-badge">4:30 PM</div>
+                            <h3>Cultural Fun Stop</h3>
+                            <p>Try what locals do for fun: games, music, or simple hangouts.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-time="5:00 PM">
+                        <div class="timeline-marker">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="time-badge">5:00 PM</div>
+                            <h3>Farewell</h3>
+                            <p>End the day with reflections and new connections.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Ready to Explore?</h2>
+                    <p class="contact-subtitle">Come with curiosity. Leave with memories.</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <h3>Book Your Baghdad Experience</h3>
+                            <p>Get in touch to schedule your unique cultural exploration of Baghdad.</p>
+                            
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <span class="label">Email</span>
+                                        <span class="value">hellobaghdad964@gmail.com</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <span class="label">Phone</span>
+                                        <span class="value">07877558717</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <div>
+                                        <span class="label">Price</span>
+                                        <span class="value">$100 per person</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/hellobaghdad964/" target="_blank" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i>
+                                    Your Name
+                                </label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="form-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Your Email
+                                </label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="form-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i>
+                                    Your Phone
+                                </label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="form-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="date">
+                                    <i class="fas fa-calendar"></i>
+                                    Preferred Date
+                                </label>
+                                <input type="date" id="date" name="date">
+                                <span class="form-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">
+                                    <i class="fas fa-comment"></i>
+                                    Any special requests or questions?
+                                </label>
+                                <textarea id="message" name="message" rows="5"></textarea>
+                                <span class="form-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Inquiry
+                                <span class="button-shine"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>
+                        <i class="fas fa-map-marked-alt"></i>
+                        HelloBaghdad
+                    </h3>
+                    <p>Discover the real Baghdad with a local guide.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#itinerary">Itinerary</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> hellobaghdad964@gmail.com</li>
+                            <li><i class="fas fa-phone"></i> 07877558717</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Baghdad Smart Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
